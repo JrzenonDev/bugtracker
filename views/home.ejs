@@ -5,6 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>BugTracker</title>
+        <script>
+            document.onreadystatechange = () => {
+                if(document.readyState === 'interactive') {
+                    document.getElementById('userAgent').value = window.navigator.userAgent
+                    console.log('ola', window.navigator)
+                    console.log('hello', window.navigator.userAgent)
+                    console.log('hora', new Date())
+                }
+            }
+        </script>
     </head>
     <body>
         <h1>Ferramenta de relato de Bugs</h1>
